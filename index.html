@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6 day of js</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="containers">
+        <h1> 06.11.23 , 06 days of js</h1>
+        <h2>Function</h2>
+        <section>
+            <p>Объявите функцию FullName , и она выведет ваше полное имя.</p>
+            <p> function fun(){<br>
+                let names='sher';<br>
+                return names;<br>
+            }<br>
+            let full=document.getElementById('fullName');<br>
+                full.innerHTML=fun();<br></p>
+            <p id="fullName"></p>
+        </section>
+
+        <section>
+            <p>Объявите функцию addNumbers , она принимает два параметра и возвращает сумму.</p>
+            <p>
+                let sum=number1+number2;<br>
+                return sum;<br>
+
+            } <br>
+            let numbers=document.getElementById('numbers');<br>
+            numbers.innerHTML=addNumbers(15,13);<br>
+            </p>
+            <p id="numbers"></p>
+        </section>
+
+        <section>
+            <p>Напишите имя функции showDateTime , которая показывает время в следующем формате: 01.08.2020 04:08, используя объект Date.</p>
+            <p>
+                function showDateTime(){<br>
+                    let news=new Date();<br>
+                    let day=news.getDate();<br>
+                    let month=news.getMonth()+1;<br>
+                    let year=news.getFullYear();<br>
+                    let fulltimes=day+' ' +month+' ' +year<br>
+                    return fulltimes;<br>
+                }<br>
+                let fullTime=document.getElementById('fullTime');<br>
+                fullTime.innerHTML=showDateTime()<br>
+                console.log(showDateTime())<br>
+            </p>
+            <p id="fullTime"></p>
+        </section>
+
+        <section>
+            <p>Объявите имя функцииverseArray . Он принимает массив в качестве параметра и возвращает обратную сторону массива (не используйте метод).</p>
+            <p>
+                function reverseArray(){<br>
+                    let arr=[1,2,3,4,5]<br>
+                    return arr;<br>
+                  
+                }<br>
+                console.log(reverseArray())<br>
+                <p id="reverseNum"></p>
+            </p>
+        </section>
+
+        <section>
+            <p>Объявите имя функцииverseArray . Он принимает массив в качестве параметра и возвращает обратную сторону массива (не используйте метод).</p>
+            <p>
+                function reverseArrayText(){<br>
+                    
+                    let arrText=['a','b','c','d'];<br>
+                    return arrText;<br>
+                  
+                }<br>
+                console.log(reverseArrayText())<br>
+            </p>
+            <p id="reverseText"></p>
+        </section>
+
+        <section>
+            <p>Объявите имя функции CapitalizeArray . Он принимает массив в качестве параметра и возвращает массив с заглавной буквы.</p>
+            <p>
+                function uppText(){<br>
+                    let tex='sher han';<br>
+                    let uppText=tex.toUpperCase();<br>
+                    return uppText;<br>
+                }<br>
+                console.log(uppText())<br>
+            </p>
+            <p id="CapitalizeArray"></p>
+        </section>
+
+
+    </div>
+    <script>
+        function fun(){
+            let names='sher';
+            return names;
+        }
+        let full=document.getElementById('fullName');
+            full.innerHTML=fun();
+
+            // --------------------------------------------
+        
+            function addNumbers (number1 , number2){
+                let sum=number1+number2;
+                return sum;
+
+            } 
+            let numbers=document.getElementById('numbers');
+            numbers.innerHTML=addNumbers(15,13);
+
+            // -----------------------------------------------
+            function showDateTime(){
+                let news=new Date();
+                let day=news.getDate();
+                let month=news.getMonth()+1;
+                let year=news.getFullYear();
+                let fulltimes=day+' ' +month+' ' +year
+                return fulltimes;
+            }
+            let fullTime=document.getElementById('fullTime');
+            fullTime.innerHTML=showDateTime()
+            console.log(showDateTime())
+// -------------------------------------------------------------------
+            
+            function reverseArray(){
+                let arr=[1,2,3,4,5]
+                let numarr=arr.reverse()
+                return numarr;
+              
+            }
+            let reverseNum=document.getElementById('reverseNum');
+            reverseNum.innerHTML=reverseArray()
+            console.log(reverseArray())
+
+// -------------------------------------------------------
+            function reverseArrayText(){
+                
+                let arrText=['a','b','c','d'];
+                let text=arrText.reverse();
+                return  text
+              
+            }
+            let reverseText=document.getElementById('reverseText');
+            reverseText.innerHTML=reverseArrayText()
+            console.log(reverseArrayText())
+
+            // ---------------------------------------
+
+            function CapitalizeArray(){
+                let tex='sher han';
+                let uppText=tex.toUpperCase();
+                return uppText;
+            }
+            console.log(uppText())
+            
+            let CapitalizeArrays=document.getElementById('CapitalizeArray')
+            CapitalizeArrays.innerHTML=CapitalizeArray( )
+
+
+
+
+    </script>
+</body>
+</html>
